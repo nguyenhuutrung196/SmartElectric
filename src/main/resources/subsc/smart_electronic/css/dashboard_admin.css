@@ -1,0 +1,248 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.main_from {
+
+}
+
+.top_form{
+    -fx-background-color: linear-gradient(to top right,#608272,#636c84);
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.4),3,0,0,0);
+    -fx-background-radius: 1px;
+}
+/**/
+.semi_top_form{
+    -fx-background-color: #fff;
+    -fx-border-color: #b59696;
+}
+.white-bg{
+    -fx-background-color:#fff;
+    -fx-background-radius: 8px;
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.4),3,0,0,0);
+}
+.import-image{
+    /*-fx-background-color: linear-gradient(to top right,#605575,#c8fbf9,#605575);*/
+    -fx-background-color:#605575;
+    -fx-cursor: hand;
+    -fx-background-radius: 2px;
+}
+.white-bg1{
+    -fx-background-color:#fff;
+    -fx-background-radius: 2px;
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.4),3,0,0,0);
+}
+.white-bg-customer{
+    -fx-background-color:#fff;
+    -fx-background-radius: 3px;
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.4),3,0,0,0);
+}
+.nav_buttom{
+    /*-fx-background-color: transparent;*/
+    -fx-background-color: linear-gradient(to top right,#605575,#819a77,#899196);
+    -fx-background-radius: 13px;
+    -fx-cursor: hand;
+    /*#905e5e*/
+}
+.nav_buttom:focused{
+    -fx-background-color: linear-gradient(to top right,#899196,#819a77,#605575);
+
+}
+.edit_buttom{
+    /*-fx-background-color: transparent;*/
+    -fx-background-color: #ab8f8f;
+    /*linear-gradient(to top right,#605575,#819a77,#899196);*/
+    -fx-background-radius:13px;
+    -fx-cursor: hand;
+    /*#905e5e*/
+}
+.edit_buttom:hover{
+    -fx-background-color: #6b7cad;
+    /*linear-gradient(to top right, #c5b8a7,#af916b);*/
+
+}
+.sign_out{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+.hyperlink{
+    -fx-border-color: transparent;
+}
+.btn-top{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}
+.top-data{
+    -fx-background-color: linear-gradient(to top right,#644196,#a8b3cc);
+    -fx-background-radius: 8px;
+}
+.top-data1{
+    -fx-background-color: linear-gradient(to top right,#636e2a,#a8b3cc);
+    -fx-background-radius: 8px;
+}
+
+.top-data2{
+    -fx-background-color: linear-gradient(to top right,#754f4f,#a8b3cc);
+    -fx-background-radius: 8px;
+}
+.top-data3{
+    -fx-background-color:linear-gradient(to top right,#568979,#90a1b5);
+    -fx-background-radius: 8px;
+}
+/*#568979*/
+.search{
+    -fx-background-color: linear-gradient(to bottom ,#efefef,#eee);
+    -fx-background-radius:4px;
+    -fx-border-color:#000;
+    -fx-border-radius:4px;
+    -fx-border-width:2px;
+}
+
+.search{
+    -fx-background-color: #fff;
+    -fx-background-radius:4px;
+    -fx-border-color:#000;
+    -fx-border-radius:4px;
+    -fx-border-width:1px;
+}
+
+.search:focused{
+    -fx-border-color:linear-gradient(to bottom right,#23825e,#6d6e30);
+}
+
+.btn-add{
+    -fx-background-color:linear-gradient(to bottom right,#b4c581,#4c572c);
+    -fx-background-radius:8px;
+}
+.btn-add:hover{
+    -fx-background-color:#627540;
+    -fx-background-radius:8px;
+    -fx-cursor: hand;
+}
+.btn-update{
+    -fx-background-color:linear-gradient(to bottom right,#9c74a8,#482b4d);
+    -fx-background-radius:8px;
+}
+
+.btn-update:hover{
+    -fx-background-color:#ae7d7d;
+    -fx-background-radius:8px;
+    -fx-cursor: hand;
+}
+
+.btn-clear{
+    -fx-background-color:linear-gradient(to bottom right,#a18080,#615c3f);
+    -fx-background-radius:8px;
+}
+
+.btn-clear:hover{
+    -fx-background-color:#c288a2;
+    -fx-background-radius:8px;
+    -fx-cursor: hand;
+}
+
+.btn-delete{
+    -fx-background-color:linear-gradient(to bottom right,#ab8181,#7f2828);
+    -fx-background-radius:8px;
+}
+
+.btn-delete:hover{
+    -fx-background-color:#ae8a8a;
+    -fx-cursor: hand;
+}
+
+.textField{
+    -fx-background-color: transparent;
+    -fx-border-color:#000;
+    /*linear-gradient(to top right,#64522c,#a8962b);*/
+    -fx-border-width:0px 0px 1px 0px;
+
+}
+.textField:focused{
+    /*-fx-border-width:0px 0px 2px 0px;*/
+    -fx-border-color:linear-gradient(to top right,#23825e,#6d6e30);
+}
+.customarSearch{
+    -fx-background-color: transparent;
+    -fx-border-color:#000;
+    /*linear-gradient(to top right,#a1bb6d,#6d7cba);*/
+
+    -fx-border-width:0px 0px 1px 0px;
+
+}
+.customarSearch:focused{
+    -fx-border-width:0px 0px 1px 0px;
+    -fx-border-color:linear-gradient(to top right,#23825e,#6d6e30);
+}
+
+.combobox{
+    -fx-background-color: transparent;
+    -fx-border-color:#64522c;
+    -fx-border-width: 1px;
+    -fx-border-radius:4px;
+}
+/*.table-view{
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to top right,#6d6e30,#a8b3cc);
+    -fx-border-color:#fff;
+    -fx-border-width:1px;
+    -fx-border-radius:3px;
+    -fx-padding: 0px;
+}
+#64522c
+.table-view .table-column{
+    -fx-alignment:CENTER;
+}
+.table-view .column-header-background{
+    -fx-border-color:#fff;
+        linear-gradient(to top right,#6d6e30,#a8b3cc);
+    -fx-background-insets:0 0 0 0;
+    -fx-background-radius:5px 5px 0px 0px;
+}
+
+.table-view .column-header, .filter{
+    -fx-background-color: #fff;
+    -fx-size:40px;
+}
+#754f4f
+.table-view .column-header .label{
+    -fx-text-fill:#000;
+    -fx-font-family:"Book Antiqua";
+    -fx-font-size:14px;
+}*/
+.table-view{
+    -fx-background-color: transparent;
+    /*-fx-border-color: linear-gradient(to top right,#6d6e30,#a8b3cc);*/
+    -fx-border-color:#64522c;
+    -fx-border-width:1px;
+    -fx-border-radius:3px;
+    -fx-padding: 0px;
+}
+.table-view .table-column{
+    -fx-alignment:CENTER;
+}
+.table-view .column-header-background{
+    -fx-border-color: linear-gradient(to top right,#6d6e30,#a8b3cc);
+    -fx-background-insets:0 0 0 0;
+    /*-fx-background-radius:5px 5px 0px 0px;*/
+}
+
+.table-view .column-header, .filter{
+    -fx-background-color: #d7cac5;
+    -fx-size:40px;
+}
+/*#754f4f*/
+.table-view .column-header .label{
+    -fx-text-fill:#000;
+    -fx-font-family:"Californian FB";
+    -fx-font-size:14px;
+}
+.nav_buttomd{
+    -fx-background-color:#212040;
+    /*linear-gradient(to top right,#353047,#766c9a);*/
+    -fx-background-radius: 13px;
+    -fx-cursor: hand;
+}
+.nav_buttomd:focused{
+    -fx-background-color:#1c3743;
+}

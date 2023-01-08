@@ -1,0 +1,75 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    /*https://www.youtube.com/watch?v=Dew1fcUx1LI&t=4269s*/
+}
+.left-design{
+    -fx-background-color:linear-gradient(to top left,#397f43,#6f5f72);
+    -fx-background-radius: 3px;
+}
+.white-bg{
+
+    -fx-background-color:#fff;
+    -fx-background-radius: 3px;
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.4),3,0,0,0);
+}
+.login-field{
+    /*#397f43#d7cac5*/
+    /*-fx-background-color:#6f5f72;*/
+    /*-fx-background-color:#fff;*/
+    -fx-background-color:#d7cac5;
+    -fx-background-radius: 8px;
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.4),3,0,0,0);
+}
+.topfield{
+    /*#397f43#d7cac5*/
+    /*-fx-background-color:#6f5f72;*/
+    /*-fx-background-color:#fff;*/
+    -fx-background-color:#d7cac5;
+    -fx-background-radius: 5px;
+    /*-fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.4),3,0,0,0);*/
+}
+.icon{
+    -fx-background-color: #fff;
+}
+.textField{
+    /*-fx-background-color:transparent;*/
+    -fx-background-color: linear-gradient(to bottom ,#efefef,#eee);
+    -fx-background-radius:4px;
+    -fx-border-color:#000;
+    -fx-border-radius:4px;
+    -fx-border-width:2px;
+
+}
+.textField:focused{
+    -fx-background-color:#fff;
+    -fx-border-color:linear-gradient(to bottom right,#23825e,#6d6e30);
+    -fx-border-width:2px;
+}
+.btn-signin{
+    -fx-background-color:linear-gradient(to top right,#535a7c,#6f7c47);
+    /*-fx-background-color: #423557;*/
+    /*-fx-background-color:floralwhite;*/
+    -fx-background-radius: 12px;
+    -fx-cursor: hand;
+}
+.btn-signin:hover{
+
+    -fx-background-color:linear-gradient(to top right,#6f7c47,#535a7c);
+}
+.shadow{
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,08),5,0,0,0);
+}
+
+.buttom-close{
+    -fx-background-color:transparent;
+    -fx-cursor: hand;
+}
+.hyper-link{
+    -fx-border-color: transparent;
+}
+.hyper-link:hover{
+    -fx-text-fill: #000;
+}

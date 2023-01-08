@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" pageWidth="226" pageHeight="425" columnWidth="186" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c5760b3d-bda7-405e-b453-fe4476cba1f4">
+	<property name="ireport.zoom" value="3.4522712143931042"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="490"/>
+	<parameter name="smartPara" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from customers inner join bills on customers.customer_id = bills.bill_customer_id where bill_id = $P{smartPara}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer"/>
+	<field name="customer_id" class="java.lang.Integer"/>
+	<field name="customer_name" class="java.lang.String"/>
+	<field name="customer_address" class="java.lang.String"/>
+	<field name="customer_contact" class="java.lang.String"/>
+	<field name="customer_email" class="java.lang.String"/>
+	<field name="customer_cate" class="java.lang.String"/>
+	<field name="customer_prodName" class="java.lang.String"/>
+	<field name="customer_quanlity" class="java.lang.Integer"/>
+	<field name="customer_totalPrice" class="java.math.BigDecimal"/>
+	<field name="customer_date" class="java.sql.Timestamp"/>
+	<field name="customer_color" class="java.lang.String"/>
+	<field name="bill_id" class="java.lang.Integer"/>
+	<field name="bill_customer_id" class="java.lang.Integer"/>
+	<field name="bill_emp_id" class="java.lang.String"/>
+	<field name="bill_total_payment" class="java.math.BigDecimal"/>
+	<field name="bill_discount" class="java.math.BigDecimal"/>
+	<field name="bill_date" class="java.sql.Timestamp"/>
+	<group name="smartelectric">
+		<groupExpression><![CDATA[$F{customer_id}]]></groupExpression>
+		<groupFooter>
+			<band height="26">
+				<staticText>
+					<reportElement x="100" y="0" width="40" height="26" uuid="bff43894-aab6-4955-b2b0-a3969e8770ee"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial" size="10"/>
+					</textElement>
+					<text><![CDATA[Total: $]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="140" y="0" width="46" height="26" uuid="1f54075a-c539-4d5d-97a9-35da5b81e43d"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="Arial"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{bill_total_payment}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="68" splitType="Stretch">
+			<staticText>
+				<reportElement x="42" y="22" width="103" height="24" uuid="6d995224-456e-4cf7-8e18-4a130ff63c86"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="16"/>
+				</textElement>
+				<text><![CDATA[Receipt Detail]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="94" y="46" width="55" height="20" uuid="ae88103d-416f-47d8-bb6a-37b21f075049"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Customer #:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="149" y="46" width="23" height="20" uuid="243f6623-d942-4b69-b782-cc0a9e8ebd11"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customer_id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="9" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="186" height="1" uuid="1136c243-da08-4d51-9c2f-79a45610744a"/>
+				<graphicElement>
+					<pen lineStyle="Double"/>
+				</graphicElement>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="45" height="20" uuid="ef9031cf-56f9-4645-a961-a319b9cdb76a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Product]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="0" width="49" height="20" uuid="b1cd1ec3-3c0d-4523-8107-c8b9ad47f3ca"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Color]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="94" y="0" width="54" height="20" uuid="d769e65f-fdaf-45c8-975e-98f21c284089"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="148" y="0" width="38" height="20" uuid="127a6a6c-48df-4041-8066-bfff878a92ca"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<line>
+				<reportElement x="45" y="30" width="100" height="1" uuid="888b3c51-c8f2-40be-a264-e9efc06285db"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="2" width="45" height="22" uuid="79ac7ab7-cfe1-45ca-b2ce-a693777746a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customer_prodName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="2" width="49" height="22" uuid="d8872302-b2c2-4658-a729-d2b1c41fd5be"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customer_color}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="95" y="2" width="54" height="20" uuid="2a1d9340-b4d2-42de-9afe-110d80eadcba"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customer_quanlity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="2" width="38" height="20" uuid="132ff3a5-ffae-4b64-8448-973fc9038cd8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{customer_totalPrice}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="1" y="28" width="186" height="1" uuid="081c122a-065f-4450-a6cd-1cd116acfefd"/>
+				<graphicElement>
+					<pen lineStyle="Dashed"/>
+				</graphicElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="68" height="10" uuid="4fbb06d5-64e3-4961-88e1-eabe9b767fda"/>
+				<textElement>
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<text><![CDATA[Smart Electric Aptech]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="10" width="109" height="9" uuid="a8998a66-174b-43cc-9d8e-730a4b97e79f"/>
+				<textElement>
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<text><![CDATA[35/6 D5, Binh Thanh District, HCM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="19" width="68" height="15" uuid="96e6e8a9-54fe-4fd7-977d-97c14f0d8f35"/>
+				<textElement>
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<text><![CDATA[Hotline: 1800 1779]]></text>
+			</staticText>
+			<line>
+				<reportElement x="42" y="33" width="100" height="1" uuid="90f586bb-8362-490d-87e6-9307dce4f864"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="45" y="0" width="98" height="23" uuid="41db344b-081d-4fde-b5e9-dcf9b23f012d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="7"/>
+				</textElement>
+				<text><![CDATA[Thank you very much for choosing to buy our products]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+</jasperReport>

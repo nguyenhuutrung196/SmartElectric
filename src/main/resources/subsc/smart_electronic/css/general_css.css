@@ -1,0 +1,42 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.main_from {
+
+}
+
+.top_form{
+    -fx-background-color: linear-gradient(to top right,#608272,#636c84);
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.4),3,0,0,0);
+    -fx-background-radius: 1px;
+}
+.nav_form{
+    -fx-background-color: linear-gradient(to top right,#608272,#636c84);
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.4),3,0,0,0);
+    -fx-background-radius: 1px;
+}
+.semi_top_form{
+    -fx-background-color: #fff;
+    -fx-background-radius: 2px;
+}
+.white-bg{
+    -fx-background-color:#fff;
+    -fx-background-radius: 5px;
+    -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.4),3,0,0,0);
+}
+.nav_buttom{
+    /*-fx-background-color: transparent;*/
+    -fx-background-color: linear-gradient(to top right,#605575,#819a77,#899196);
+    -fx-background-radius: 13px;
+    -fx-cursor: hand;
+    /*#905e5e*/
+}
+.nav_buttom:focused{
+    -fx-background-color: linear-gradient(to top right,#899196,#819a77,#605575);
+
+}
+.sign_out{
+    -fx-background-color: transparent;
+    -fx-cursor: hand;
+}

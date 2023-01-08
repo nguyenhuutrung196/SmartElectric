@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="629.0" prefWidth="1262.0" styleClass="white-bg-customer" stylesheets="@../css/dashboard_admin.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="subsc.smart_electronic.controllers.MyemployeeformController">
+   <children>
+      <TableView fx:id="TableView_customer" layoutX="14.0" prefHeight="266.0" prefWidth="1262.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="columnID" prefWidth="75.0" text="Customer Id" />
+          <TableColumn fx:id="columnName" prefWidth="134.0" text="Customer name" />
+            <TableColumn fx:id="columnAddress" prefWidth="134.0" text="Customer Address" />
+            <TableColumn fx:id="columncontact" prefWidth="134.0" text="Customer Contact" />
+            <TableColumn fx:id="columnEmail" prefWidth="134.0" text="Customer Email" />
+            <TableColumn fx:id="columncate" prefWidth="134.0" text="Customer Cate" />
+            <TableColumn fx:id="columnproName" prefWidth="134.0" text="Product Name" />
+            <TableColumn fx:id="columnQuanlity" prefWidth="134.0" text="Quanlity" />
+            <TableColumn fx:id="columnPrice" prefWidth="94.0" text="Price" />
+            <TableColumn fx:id="columnRank" prefWidth="153.0" text="Ranks" />
+        </columns>
+      </TableView>
+      <Label layoutX="20.0" layoutY="315.0" text="Catergory:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text_cate" layoutX="135.0" layoutY="323.0" onKeyTyped="#searchCatergory" prefHeight="25.0" prefWidth="208.0" styleClass="textField" stylesheets="@../css/dashboard_admin.css" />
+      <Label layoutX="20.0" layoutY="368.0" text="Product Name:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="text_chooseProduct" layoutX="135.0" layoutY="366.0" prefHeight="27.0" prefWidth="208.0" styleClass="combobox" stylesheets="@../css/dashboard_admin.css" />
+      <Label layoutX="20.0" layoutY="421.0" text="Quanlity:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="text_chooseQuanlity" layoutX="135.0" layoutY="419.0" onMouseClicked="#getSpnnerValues" prefHeight="25.0" prefWidth="208.0" styleClass="combobox" stylesheets="@../css/dashboard_admin.css" />
+      <Button fx:id="btn_add" layoutX="24.0" layoutY="530.0" mnemonicParsing="false" onAction="#addPurchase" prefHeight="45.0" prefWidth="77.0" styleClass="btn-add" stylesheets="@../css/dashboard_admin.css" text="Add" textFill="WHITE" />
+      <Button fx:id="btn_pay" layoutX="135.0" layoutY="530.0" mnemonicParsing="false" onAction="#purchasePay" prefHeight="45.0" prefWidth="77.0" styleClass="btn-update" stylesheets="@../css/dashboard_admin.css" text="Pay" textFill="WHITE" />
+      <Button fx:id="btn_cancel" layoutX="239.0" layoutY="530.0" mnemonicParsing="false" onAction="#cancelPurchae" prefHeight="45.0" prefWidth="77.0" styleClass="btn-delete" stylesheets="@../css/dashboard_admin.css" text="Cancel" textFill="WHITE" />
+      <Label layoutX="422.0" layoutY="542.0" text="Total:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="label_total" layoutX="459.0" layoutY="542.0" prefHeight="21.0" prefWidth="261.0" text="\$0.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text_seacrh" layoutX="422.0" layoutY="408.0" onAction="#searchP" onKeyTyped="#searchP" prefHeight="25.0" prefWidth="208.0" styleClass="textField" stylesheets="@../css/dashboard_admin.css" />
+      <Label layoutX="365.0" layoutY="325.0" text="Email:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="text_chooseEmail" layoutX="422.0" layoutY="323.0" prefHeight="27.0" prefWidth="208.0" styleClass="combobox" stylesheets="@../css/dashboard_admin.css" />
+      <ComboBox fx:id="text_name" layoutX="422.0" layoutY="366.0" prefHeight="27.0" prefWidth="208.0" styleClass="combobox" stylesheets="@../css/dashboard_admin.css" />
+      <Label layoutX="363.0" layoutY="368.0" text="Name:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
